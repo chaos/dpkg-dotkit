@@ -1,0 +1,21 @@
+2007-09-07 Jim Garlick <garlick@llnl.gov>
+
+	* package.conf : Remove.
+
+	* META, dpkg-dotkit.spec : Add.
+	
+	* : renamed repo to dpkg-dotkit, rpm packaging.
+
+	* : tag dpkg-dotkit-060613-1
+
+2007-08-10 Jim Garlick <garlick@llnl.gov>
+
+	* package.conf : Update path to dpkg-db.
+
+	* : tag dotkit_060613-2
+
+2006-12-22 Jim Garlick <garlick@llnl.gov>
+
+	* Initial import of dotkit060613.
+
+	* : tag dotkit_060613-1
