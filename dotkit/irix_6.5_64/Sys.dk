@@ -1,4 +1,0 @@
-#c shell
-#d IRIX-specific system packages
-
-dk_op -q Super bsd ubin

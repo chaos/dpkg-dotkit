@@ -1,4 +1,0 @@
-#c shell
-#d Solaris-specific developer packages
-
-dk_op -q nfs ufs ccsbin ccslib SUNWspro

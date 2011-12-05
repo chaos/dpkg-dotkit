@@ -1,4 +1,0 @@
-#c shell
-#d TRU64-specific developer packages
-
-dk_op -q ccsbin ccslib

@@ -1,4 +1,0 @@
-#c shell
-#d Unix filesystem - mount, quota, etc. (Solaris hosts.)
-
-dk_alter PATH /usr/lib/fs/ufs

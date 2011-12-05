@@ -1,4 +1,0 @@
-#c shell
-#d AIX-specific system packages
-
-dk_op -q Super dt

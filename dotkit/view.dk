@@ -1,5 +1,0 @@
-#c shell/dotkit
-#d View the contents of a dotkit
-
-$DK_ROOT/etc/view
-setenv _dk_err " (ok, view done)"

@@ -1,5 +1,0 @@
-#c shell
-#d Add a null component to MANPATH - useful for newer mans.
-
-dk_setdef MANPATH :
-dk_alter MANPATH ""

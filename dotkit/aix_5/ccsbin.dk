@@ -1,4 +1,0 @@
-#c shell
-#d Add /usr/ccs/bin to PATH
-
-dk_alter PATH /usr/ccs/bin

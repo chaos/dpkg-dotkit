@@ -1,4 +1,0 @@
-#c shell
-#d Universal (?) preference settings
-
-dk_setenv LC_ALL C

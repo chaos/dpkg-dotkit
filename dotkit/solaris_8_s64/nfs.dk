@@ -1,4 +1,0 @@
-#c shell
-#d NFS filesystem - share, showmount, etc. (Solaris hosts.)
-
-dk_alter PATH /usr/lib/fs/nfs

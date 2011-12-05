@@ -1,4 +1,0 @@
-#c shell
-#d AIX-specific developer packages
-
-dk_op -q ccsbin ccslib

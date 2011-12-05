@@ -1,4 +1,0 @@
-#c shell
-#d Add /usr/bsd to PATH
-
-dk_alter PATH /usr/bsd
