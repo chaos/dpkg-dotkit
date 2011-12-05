@@ -1,0 +1,6 @@
+========================================================================
+Release Notes for dpkg-dotkit-060613-2                       05 Dec 2011
+========================================================================
+
+* Untar dotkit in the repo and remove the unneeded bits, formerly
+  done in the spec file.

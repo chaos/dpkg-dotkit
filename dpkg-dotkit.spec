@@ -25,7 +25,7 @@ Stripped down version of dotkit for use with dpkg-runtests.
 umask 022
 mkdir -p $RPM_BUILD_ROOT%{_dkroot}
 pushd dotkit
-tar cf - . | (cd $RPM_BUILD_ROOT%{_dkroot} && tar xvf - )
+tar --exclude Copyright -cf - . | (cd $RPM_BUILD_ROOT%{_dkroot} && tar xvf - )
 popd dotkit
 
 %clean
@@ -34,5 +34,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-, root, root)
 %{_dkroot}
+%doc dotkit/Copyright
 
 # vi: expandtab sw=4 ts=4
