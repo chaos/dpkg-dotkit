@@ -1,0 +1,5 @@
+#c shell
+#d Add /usr/dt/{bin,man} to PATH, MANPATH
+
+dk_alter PATH /usr/dt/bin
+dk_alter MANPATH /usr/dt/man

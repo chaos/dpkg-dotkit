@@ -1,0 +1,4 @@
+#0: test name with dots in it.
+
+echo ""
+echo "svn-1.2.3 here"

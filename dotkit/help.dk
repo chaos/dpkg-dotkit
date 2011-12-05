@@ -1,0 +1,5 @@
+#c shell/dotkit
+#d Show help for a dotkit
+
+$DK_ROOT/etc/help
+setenv _dk_err " (ok, help done)"

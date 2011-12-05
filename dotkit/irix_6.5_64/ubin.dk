@@ -1,0 +1,5 @@
+#c shell
+#d Add /usr/{bin,share/catman} to PATH, MANPATH
+
+dk_alter PATH /usr/bin
+dk_alter MANPATH /usr/share/catman

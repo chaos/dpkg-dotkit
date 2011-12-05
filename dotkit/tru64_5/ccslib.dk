@@ -1,0 +1,4 @@
+#c shell
+#d Add /usr/ccs/lib to PATH
+
+dk_alter PATH /usr/ccs/lib

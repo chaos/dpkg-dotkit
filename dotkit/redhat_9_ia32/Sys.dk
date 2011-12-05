@@ -1,0 +1,4 @@
+#c shell
+#d Linux-specific system packages
+
+dk_op -q Super x11

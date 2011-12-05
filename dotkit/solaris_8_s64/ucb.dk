@@ -1,0 +1,5 @@
+#c shell
+#d use commands in /usr/ucb (Solaris hosts.)
+
+dk_alter PATH /usr/ucb
+#dk_alter LD_LIBRARY_PATH /usr/ucblib

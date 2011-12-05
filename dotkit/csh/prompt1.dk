@@ -1,0 +1,20 @@
+#c shell
+#d Set up a basic prompt with the hostname embedded.
+
+unuse -q `dk_rep 'prompt*'`
+
+if ( $_dk_op == "use" ) then
+  if ( $?prompt ) then
+    setenv oldprompt "$prompt"
+    set Host = `hostname | sed -e 's/\..*$//'` # strip domain name.
+    set prompt = "${Host}% "
+  endif
+else # unuse
+  if ( $?oldprompt ) then
+    set prompt = "$oldprompt"
+    unsetenv oldprompt
+  else
+    set prompt = "% "
+  endif
+  unset Host
+endif

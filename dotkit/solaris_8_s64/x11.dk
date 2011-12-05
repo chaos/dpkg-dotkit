@@ -1,0 +1,6 @@
+#c shell
+#d Open windows (Solaris X11) commands and environment
+
+dk_alter PATH /usr/openwin/bin
+dk_alter MANPATH /usr/openwin/man
+#dk_alter LD_LIBRARY_PATH /usr/openwin/lib

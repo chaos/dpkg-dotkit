@@ -1,0 +1,20 @@
+#c shell
+#d Prompt with your working directory and command number.
+
+unuse -q `dk_rep 'prompt*'`
+
+if ( $_dk_op == "use" ) then
+  if ( $?prompt ) then
+    setenv oldprompt "$prompt"
+    set prompt = "${cwd}:\!% "
+    alias cd 'chdir \!* && set prompt = "${cwd}:\\!% "'
+  endif
+else # unuse
+  if ( $?oldprompt ) then
+    set prompt = "$oldprompt"
+    unsetenv oldprompt
+  else
+    set prompt = "% "
+  endif
+  unalias cd
+endif

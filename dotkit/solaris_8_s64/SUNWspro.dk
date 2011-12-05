@@ -1,0 +1,6 @@
+#c compilers/sun
+#d Solaris compilers (C, Fortran, etc.) under /opt/SUNWspro
+
+dk_alter PATH /opt/SUNWspro/bin
+dk_alter MANPATH /opt/SUNWspro/man
+#dk_alter LD_LIBRARY_PATH /opt/SUNWspro/lib

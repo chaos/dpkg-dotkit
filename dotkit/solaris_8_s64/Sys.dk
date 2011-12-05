@@ -1,0 +1,4 @@
+#c shell
+#d Solaris-specific system packages
+
+dk_op -q Super dt ucb x11

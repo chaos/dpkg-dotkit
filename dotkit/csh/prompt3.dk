@@ -1,0 +1,26 @@
+#c shell
+#d Prompt with "hostname{username}command_number: ".
+
+unuse -q `dk_rep 'prompt*'`
+
+if ( $_dk_op == "use" ) then
+  if ( $?prompt ) then
+    setenv oldprompt "$prompt"
+    set Host = `hostname | sed -e 's/\..*$//'` # strip domain name.
+    if( $?USER ) then
+      set _dk_user = $USER
+    else if( $?LOGNAME ) then
+      set _dk_user = $LOGNAME
+    endif
+    set prompt = "${Host}{$_dk_user}\!: "
+  endif
+  unset _dk_user
+else # unuse
+  if ( $?oldprompt ) then
+    set prompt = "$oldprompt"
+    unsetenv oldprompt
+  else
+    set prompt = "% "
+  endif
+  unset Host
+endif
