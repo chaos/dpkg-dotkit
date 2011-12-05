@@ -28,13 +28,13 @@ if [ "$availflag" != "1" ]; then
 fi
 
 # Prints list of valid {node}x{subnode} directories
-#    Node = {~/.kits  $DK_NODE  $DK_ROOT}
+#    Node = {$DK_NODE  $DK_ROOT}
 # Subnode = {$DK_SUBNODE}
 f_dirs()
 {
   sep="${1:-/}"
   _dk_sn="`echo $DK_SUBNODE | tr : ' '`"
-  _dk_n="`echo $HOME/.kits $DK_NODE $DK_ROOT | tr : ' '`"
+  _dk_n="`echo $DK_NODE $DK_ROOT | tr : ' '`"
   for i in $_dk_n
   do
     for d in $_dk_sn

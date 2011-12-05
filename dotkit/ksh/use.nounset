@@ -116,7 +116,7 @@ function _dk_uu # common code for both use and unuse
   fi
   if [[ $_dk_rl = 0 ]]; then
     _dk_dirs=
-    for _dk_d in $HOME/.kits $(_dk_spliton ":" $DK_NODE) $DK_ROOT; do
+    for _dk_d in $(_dk_spliton ":" $DK_NODE) $DK_ROOT; do
       [[ -d $_dk_d ]] || continue
       for _dk_s in $(_dk_spliton ":" $DK_SUBNODE); do
         [[ -d $_dk_d/$_dk_s ]] || continue
