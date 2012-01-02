@@ -1,6 +1,10 @@
 ========================================================================
-Release Notes for dpkg-dotkit-060613-2                       05 Dec 2011
+Release Notes for dpkg-dotkit-060613-2                       02 Jan 2012
 ========================================================================
+
+* dpkg-dotkit should ignore user dotkits (chaos bz 959)
+
+* Remove some extraneous files.
 
 * Untar dotkit in the repo and remove the unneeded bits, formerly
   done in the spec file.
